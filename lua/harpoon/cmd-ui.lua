@@ -105,21 +105,7 @@ function M.toggle_quick_menu()
     vim.api.nvim_buf_set_keymap(
         Harpoon_cmd_bufh,
         "n",
-        "h",
-        "<Cmd>lua require('harpoon.cmd-ui').toggle_quick_menu()<CR>",
-        { silent = true }
-    )
-    vim.api.nvim_buf_set_keymap(
-        Harpoon_cmd_bufh,
-        "n",
         "<ESC>",
-        "<Cmd>lua require('harpoon.cmd-ui').toggle_quick_menu()<CR>",
-        { silent = true }
-    )
-    vim.api.nvim_buf_set_keymap(
-        Harpoon_cmd_bufh,
-        "n",
-        "l",
         "<Cmd>lua require('harpoon.cmd-ui').toggle_quick_menu()<CR>",
         { silent = true }
     )
